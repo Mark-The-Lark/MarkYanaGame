@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtjx6qltrwciy"]
+
+[ext_resource type="Script" uid="uid://c0cf1eyc1l2r7" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://blfvkjoroi5rq" path="res://images.jpeg" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dc365e0so6y26" path="res://base.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dcgvepqan1kyv" path="res://cannon.tscn" id="4_lquwl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
+font_size = 40
+font_color = Color(1, 0, 0, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(-7.59929, -7.59929)
+texture = ExtResource("1_ig7tw")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(2024, 0)
+rotation = 3.14159
+scale = Vector2(-7.59929, -7.59929)
+texture = ExtResource("1_ig7tw")
+centered = false
+
+[node name="WaveBar" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 280.0
+offset_right = 2280.0
+offset_bottom = 100.0
+pivot_offset = Vector2(1000, 0)
+
+[node name="ProgressBar" type="ProgressBar" parent="WaveBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+show_percentage = false
+
+[node name="Label" type="Label" parent="WaveBar"]
+layout_mode = 0
+offset_left = 752.0
+offset_right = 1252.0
+offset_bottom = 100.0
+label_settings = SubResource("LabelSettings_1bvp3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Base" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(1280, 704)
+
+[node name="Cannon" parent="Base" instance=ExtResource("4_lquwl")]
+rotation = 0.0
+scale = Vector2(0.369976, 0.369976)
+
+[node name="HealthBar" type="Control" parent="Base"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -48.0
+offset_top = -104.0
+offset_right = 52.0
+offset_bottom = -64.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Base/HealthBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
