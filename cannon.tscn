@@ -1,14 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcgvepqan1kyv"]
 
 [ext_resource type="Script" uid="uid://ccea1qi1qxm2j" path="res://cannon.gd" id="1_23j6s"]
-[ext_resource type="Texture2D" uid="uid://b83hjjqp2qlrs" path="res://сannon_PNG48.png" id="1_i10un"]
+[ext_resource type="Texture2D" uid="uid://mraba3rrjxvr" path="res://pixil-frame-0 (5).png" id="2_23j6s"]
 
 [node name="Cannon" type="Node2D"]
 rotation = -3.14159
 script = ExtResource("1_23j6s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(4.57764e-05, 0)
-rotation = -1.5708
-scale = Vector2(0.484733, 0.484733)
-texture = ExtResource("1_i10un")
+z_index = 1
+position = Vector2(-0.9999962, -0.9999924)
+rotation = 3.1415927
+scale = Vector2(0.5263574, 0.50885403)
+texture = ExtResource("2_23j6s")

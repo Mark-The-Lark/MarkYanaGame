@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b83hjjqp2qlrs"
-path="res://.godot/imported/сannon_PNG48.png-a6aff81fbc3af94250df336db2614188.ctex"
+uid="uid://g28vxwak7itc"
+path="res://.godot/imported/ТРАВА.png-80aaef671863d0584c1cdc619bc55994.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://сannon_PNG48.png"
-dest_files=["res://.godot/imported/сannon_PNG48.png-a6aff81fbc3af94250df336db2614188.ctex"]
+source_file="res://ТРАВА.png"
+dest_files=["res://.godot/imported/ТРАВА.png-80aaef671863d0584c1cdc619bc55994.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dc365e0so6y26"]
 
 [ext_resource type="Script" uid="uid://cwe0kb108hssw" path="res://base.gd" id="1_3vi8l"]
-[ext_resource type="Texture2D" uid="uid://d3op6soy8frtf" path="res://images2.png" id="1_rpg24"]
+[ext_resource type="Texture2D" uid="uid://ka7601ap6gs3" path="res://pixil-frame-0 (4).png" id="2_3vi8l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpg24"]
 
@@ -22,5 +22,8 @@ scale = Vector2(6.36726, 6.36726)
 shape = SubResource("RectangleShape2D_rpg24")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-scale = Vector2(0.560611, 0.560611)
-texture = ExtResource("1_rpg24")
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(0.27661726, 0.26413405)
+texture = ExtResource("2_3vi8l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

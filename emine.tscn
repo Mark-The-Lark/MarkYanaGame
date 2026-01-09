@@ -1,16 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://ceoieg3tguvmt"]
+[gd_scene load_steps=6 format=3 uid="uid://bi7y8v781xij7"]
 
-[ext_resource type="Script" uid="uid://bd4yy44gklwrf" path="res://enemy.gd" id="1_4gyqm"]
-[ext_resource type="Texture2D" uid="uid://cholafvt1qxbr" path="res://slime1.png" id="2_4gyqm"]
-[ext_resource type="Script" uid="uid://bpbbqv23kx380" path="res://slime.gd" id="3_qi2p4"]
+[ext_resource type="Script" uid="uid://bd4yy44gklwrf" path="res://enemy.gd" id="1_qc66i"]
+[ext_resource type="Texture2D" uid="uid://yle40rydng4f" path="res://slime2.png" id="2_qc66i"]
+[ext_resource type="Texture2D" uid="uid://cholafvt1qxbr" path="res://slime1.png" id="2_svfkw"]
+[ext_resource type="Script" uid="uid://bpbbqv23kx380" path="res://slime.gd" id="3_svfkw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qi2p4"]
 radius = 10.364546
 height = 20.729092
 
-[node name="Enemy" type="Node2D"]
-physics_interpolation_mode = 1
-script = ExtResource("1_4gyqm")
+[node name="Emine" type="Node2D"]
+script = ExtResource("1_qc66i")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 collision_layer = 3
@@ -25,10 +25,17 @@ scale = Vector2(6.65731, 6.65731)
 shape = SubResource("CapsuleShape2D_qi2p4")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+visible = false
 position = Vector2(4.7683716e-07, -36)
 scale = Vector2(0.20275927, 0.19821379)
-texture = ExtResource("2_4gyqm")
-script = ExtResource("3_qi2p4")
+texture = ExtResource("2_svfkw")
+script = ExtResource("3_svfkw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(0, -22)
+scale = Vector2(0.1605278, 0.1605278)
+texture = ExtResource("2_qc66i")
+script = ExtResource("3_svfkw")
 
 [node name="HealthBar" type="Control" parent="RigidBody2D"]
 layout_mode = 3

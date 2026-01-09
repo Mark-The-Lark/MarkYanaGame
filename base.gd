@@ -2,6 +2,8 @@ extends Node2D
 class_name Base
 
 @onready var collidable = $RigidBody2D
+@onready var sprite = $RigidBody2D/Sprite2D
+@onready var og_scale = sprite.scale
 var health = 100
 
 func _ready() -> void:
